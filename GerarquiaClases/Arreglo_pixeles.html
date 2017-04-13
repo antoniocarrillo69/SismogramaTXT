@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  Arreglo_pixeles</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<H2>class  <A HREF="#DOC.DOCU">Arreglo_pixeles</A></H2></H2><BLOCKQUOTE>Clase que manipila y controla un array de pixeles</BLOCKQUOTE>
+<HR>
+
+<DL>
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif> <B><A HREF="#DOC.55.22">Arreglo_pixeles</A></B>(void)
+<DD><I>Constructor de la clase</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif> <B><A HREF="#DOC.55.23">~Arreglo_pixeles</A></B>(void)
+<DD><I>Destructor de la clase</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.24">Inicializa</A></B>(const int pix_x, const int pix_y, const bool val, const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> v_dim)
+<DD><I>Inicializa la clase</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.25">Destruye</A></B>(void)
+<DD><I>Destruye el contenido del arreglo</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.26">Calcula_punto</A></B>(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.16">x</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.17">y</A>, int &amp;<!1><A HREF="Base_Ventana_Graficacion.html#DOC.68.21">px</A>, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.30">py</A>)
+<DD><I>Calcula la posici&oacute;n de un punto dentro de la ventana de pixeles</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.27">Asigna_valor</A></B>(const int pix_x, const int pix_y, const bool val)
+<DD><I>Asigna a un pixel del arreglo el valor indicado</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.28">Asigna_valor</A></B>(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.16">x</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.17">y</A>, const bool val)
+<DD><I>Asigna a un pixel del arreglo el valor indicado</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.29">Retorna_valor</A></B>(const int pix_x, const int pix_y) const 
+<DD><I>Retorna el valor del pixel indicado dentro del arreglo</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.30">Asigna_todo_array</A></B>(const bool val)
+<DD><I>Asigna a todo el array el valor especificado</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.31">Asigna_linea</A></B>(const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.12">xi</A>, const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.14">yi</A>, const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.13">xf</A>, const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.15">yf</A>, const bool val)
+<DD><I>Asigna linea</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.32">Asigna_linea</A></B>(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.12">xi</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.14">yi</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.13">xf</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.15">yf</A>, const bool val)
+<DD><I>Asigna linea</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.33">Asigna_recuadro</A></B>(const int pix_x, const int pix_y, const int num, const bool val)
+<DD><I>Asigna un recuadro apartir del centro n pixeles</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.34">Asigna_recuadro</A></B>(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.16">x</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.17">y</A>, const int num, const bool val)
+<DD><I>Asigna un recuadro apartir del centro n pixeles</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.35">Cambia_dimension</A></B>(const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> v_dim, const bool val = false)
+<DD><I>Cambia la dimension del al ventana</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.36">Cambia_cantidad_pixeles</A></B>(const int pix_x, const int pix_y, const bool val, const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> v_dim)
+<DD><I>Cambia la cantidad de pixeles en la ventana</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.37">Graba_ventana</A></B>(const char* nombre)
+<DD><I>Graba la ventana con el nombre dado</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.38">Lee_ventana</A></B>(const char* nombre)
+<DD><I>Lee la ventana con el nombre dado</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.55.39">Visualiza_ventana_txt</A></B>(const char chr)
+<DD><I>Visualiza la ventana en stdout como texto</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.40">Tiene_datos</A></B>(void)
+<DD><I>Retorna si tiene datos</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.41">Dentro</A></B>(const int pix_x, const int pix_y)
+<DD><I>Revisa si el punto esta dentro de la ventana</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.42">Ventana_activa</A></B>(void)
+<DD><I>Indica el estado de la ventana</I>
+</DL></P>
+
+<P><DL>
+<DT><H3>Private Fields</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.1">Activo</A></B>
+<DD><I>Indica si esta activo el objeto</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.55.2">Num_Y</A></B>
+<DD><I>Longitud de la matriz en Y</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.55.3">Num_X</A></B>
+<DD><I>Longitud de la matrix en X</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="C_2D.html">C_2D</A> <B><A HREF="#DOC.55.4">Escala</A></B>
+<DD><I>Escala usada dentro de la ventana de pixeles</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> <B><A HREF="#DOC.55.5">Dimensiones</A></B>
+<DD><I>Dimensiones de la ventana de trabajo</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.55.6">pxx</A></B>
+<DD><I>Valores temporales</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int  <B><A HREF="#DOC.55.7">pyx</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.55.8">p_x</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int  <B><A HREF="#DOC.55.9">p_y</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.55.10">xi1</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int  <B><A HREF="#DOC.55.11">xi2</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.55.12">xi</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int  <B><A HREF="#DOC.55.13">xf</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int   <B><A HREF="#DOC.55.14">yi</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int    <B><A HREF="#DOC.55.15">yf</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int     <B><A HREF="#DOC.55.16">x</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int      <B><A HREF="#DOC.55.17">y</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.18">st</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.55.19">Con_valores</A></B>
+<DD><I>Indica si ya tiene datos</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="Definicion_pixel.html">Definicion_pixel</A>** <B><A HREF="#DOC.55.20">Arreglo</A></B>
+<DD><I>Puntero al arreglo de pixeles</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="Definicion_pixel.html">Definicion_pixel</A>* <B><A HREF="#DOC.55.21">prtArreglo</A></B>
+<DD><I>Puntero al arreglo de pixeles</I>
+</DL></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Clase que manipila y controla un array de pixeles</BLOCKQUOTE>
+<DL>
+
+<A NAME="Activo"></A>
+<A NAME="DOC.55.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Activo</B></TT>
+<DD>Indica si esta activo el objeto
+<DL><DT><DD></DL><P>
+<A NAME="Num_Y"></A>
+<A NAME="DOC.55.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Num_Y</B></TT>
+<DD>Longitud de la matriz en Y
+<DL><DT><DD></DL><P>
+<A NAME="Num_X"></A>
+<A NAME="DOC.55.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Num_X</B></TT>
+<DD>Longitud de la matrix en X
+<DL><DT><DD></DL><P>
+<A NAME="Escala"></A>
+<A NAME="DOC.55.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="C_2D.html">C_2D</A> Escala</B></TT>
+<DD>Escala usada dentro de la ventana de pixeles
+<DL><DT><DD></DL><P>
+<A NAME="Dimensiones"></A>
+<A NAME="DOC.55.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> Dimensiones</B></TT>
+<DD>Dimensiones de la ventana de trabajo
+<DL><DT><DD></DL><P>
+<A NAME="pxx"></A>
+<A NAME="DOC.55.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int pxx</B></TT>
+<DD>Valores temporales
+<DL><DT><DD></DL><P>
+<A NAME="pyx"></A>
+<A NAME="DOC.55.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int  pyx</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="p_x"></A>
+<A NAME="DOC.55.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int p_x</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="p_y"></A>
+<A NAME="DOC.55.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int  p_y</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="xi1"></A>
+<A NAME="DOC.55.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int xi1</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="xi2"></A>
+<A NAME="DOC.55.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int  xi2</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="xi"></A>
+<A NAME="DOC.55.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int xi</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="xf"></A>
+<A NAME="DOC.55.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int  xf</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="yi"></A>
+<A NAME="DOC.55.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int   yi</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="yf"></A>
+<A NAME="DOC.55.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int    yf</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="x"></A>
+<A NAME="DOC.55.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int     x</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="y"></A>
+<A NAME="DOC.55.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int      y</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="st"></A>
+<A NAME="DOC.55.18"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool st</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="Con_valores"></A>
+<A NAME="DOC.55.19"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Con_valores</B></TT>
+<DD>Indica si ya tiene datos
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo"></A>
+<A NAME="DOC.55.20"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="Definicion_pixel.html">Definicion_pixel</A>** Arreglo</B></TT>
+<DD>Puntero al arreglo de pixeles
+<DL><DT><DD></DL><P>
+<A NAME="prtArreglo"></A>
+<A NAME="DOC.55.21"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="Definicion_pixel.html">Definicion_pixel</A>* prtArreglo</B></TT>
+<DD>Puntero al arreglo de pixeles
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_pixeles"></A>
+<A NAME="DOC.55.22"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> Arreglo_pixeles(void)</B></TT>
+<DD>Constructor de la clase
+<DL><DT><DD></DL><P>
+<A NAME="~Arreglo_pixeles"></A>
+<A NAME="DOC.55.23"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> ~Arreglo_pixeles(void)</B></TT>
+<DD>Destructor de la clase
+<DL><DT><DD></DL><P>
+<A NAME="Inicializa"></A>
+<A NAME="DOC.55.24"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Inicializa(const int pix_x, const int pix_y, const bool val, const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> v_dim)</B></TT>
+<DD>Inicializa la clase
+<DL><DT><DD></DL><P>
+<A NAME="Destruye"></A>
+<A NAME="DOC.55.25"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Destruye(void)</B></TT>
+<DD>Destruye el contenido del arreglo
+<DL><DT><DD></DL><P>
+<A NAME="Calcula_punto"></A>
+<A NAME="DOC.55.26"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Calcula_punto(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.16">x</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.17">y</A>, int &amp;<!1><A HREF="Base_Ventana_Graficacion.html#DOC.68.21">px</A>, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.30">py</A>)</B></TT>
+<DD>Calcula la posici&oacute;n de un punto dentro de la ventana de pixeles
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_valor"></A>
+<A NAME="DOC.55.27"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_valor(const int pix_x, const int pix_y, const bool val)</B></TT>
+<DD>Asigna a un pixel del arreglo el valor indicado
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_valor"></A>
+<A NAME="DOC.55.28"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_valor(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.16">x</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.17">y</A>, const bool val)</B></TT>
+<DD>Asigna a un pixel del arreglo el valor indicado
+<DL><DT><DD></DL><P>
+<A NAME="Retorna_valor"></A>
+<A NAME="DOC.55.29"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Retorna_valor(const int pix_x, const int pix_y) const </B></TT>
+<DD>Retorna el valor del pixel indicado dentro del arreglo
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_todo_array"></A>
+<A NAME="DOC.55.30"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_todo_array(const bool val)</B></TT>
+<DD>Asigna a todo el array el valor especificado
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_linea"></A>
+<A NAME="DOC.55.31"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_linea(const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.12">xi</A>, const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.14">yi</A>, const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.13">xf</A>, const int <!1><A HREF="Arreglo_pixeles.html#DOC.55.15">yf</A>, const bool val)</B></TT>
+<DD>Asigna linea
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_linea"></A>
+<A NAME="DOC.55.32"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_linea(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.12">xi</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.14">yi</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.13">xf</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.15">yf</A>, const bool val)</B></TT>
+<DD>Asigna linea
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_recuadro"></A>
+<A NAME="DOC.55.33"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_recuadro(const int pix_x, const int pix_y, const int num, const bool val)</B></TT>
+<DD>Asigna un recuadro apartir del centro n pixeles
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_recuadro"></A>
+<A NAME="DOC.55.34"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Asigna_recuadro(const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.16">x</A>, const <!1><A HREF="ldouble.html">ldouble</A> <!1><A HREF="Arreglo_pixeles.html#DOC.55.17">y</A>, const int num, const bool val)</B></TT>
+<DD>Asigna un recuadro apartir del centro n pixeles
+<DL><DT><DD></DL><P>
+<A NAME="Cambia_dimension"></A>
+<A NAME="DOC.55.35"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Cambia_dimension(const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> v_dim, const bool val = false)</B></TT>
+<DD>Cambia la dimension del al ventana
+<DL><DT><DD></DL><P>
+<A NAME="Cambia_cantidad_pixeles"></A>
+<A NAME="DOC.55.36"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Cambia_cantidad_pixeles(const int pix_x, const int pix_y, const bool val, const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> v_dim)</B></TT>
+<DD>Cambia la cantidad de pixeles en la ventana
+<DL><DT><DD></DL><P>
+<A NAME="Graba_ventana"></A>
+<A NAME="DOC.55.37"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Graba_ventana(const char* nombre)</B></TT>
+<DD>Graba la ventana con el nombre dado
+<DL><DT><DD></DL><P>
+<A NAME="Lee_ventana"></A>
+<A NAME="DOC.55.38"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Lee_ventana(const char* nombre)</B></TT>
+<DD>Lee la ventana con el nombre dado
+<DL><DT><DD></DL><P>
+<A NAME="Visualiza_ventana_txt"></A>
+<A NAME="DOC.55.39"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Visualiza_ventana_txt(const char chr)</B></TT>
+<DD>Visualiza la ventana en stdout como texto
+<DL><DT><DD></DL><P>
+<A NAME="Tiene_datos"></A>
+<A NAME="DOC.55.40"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Tiene_datos(void)</B></TT>
+<DD>Retorna si tiene datos
+<DL><DT><DD></DL><P>
+<A NAME="Dentro"></A>
+<A NAME="DOC.55.41"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Dentro(const int pix_x, const int pix_y)</B></TT>
+<DD>Revisa si el punto esta dentro de la ventana
+<DL><DT><DD></DL><P>
+<A NAME="Ventana_activa"></A>
+<A NAME="DOC.55.42"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Ventana_activa(void)</B></TT>
+<DD>Indica el estado de la ventana
+<DL><DT><DD></DL><P></DL>
+
+<HR><DL><DT><B>This class has no child classes.</B></DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

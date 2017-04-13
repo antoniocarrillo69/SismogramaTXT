@@ -1,0 +1,512 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  Cadenas</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<H2>class  <A HREF="#DOC.DOCU">Cadenas</A></H2></H2><BLOCKQUOTE>Clase para manipulaci&oacute;n de cadenas</BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=95>
+<param name=classes value="CCadenas,MCadenas.html,CManipulador_archivos,MManipulador_archivos.html,CBase_Ventana_Graficacion,MBase_Ventana_Graficacion.html">
+<param name=before value="M,M|_,Mr_">
+<param name=after value="M,M,M">
+<param name=indent value="0,0,0">
+<param name=arrowdir value="down">
+</APPLET>
+<HR>
+
+<DL>
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif> <B><A HREF="#DOC.5.6">Cadenas</A></B>(void)
+<DD><I>Constructor de la clase</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif> <B><A HREF="#DOC.5.7">~Cadenas</A></B>()
+<DD><I>Destructor de la clase</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>char* <B><A HREF="#DOC.5.8">Asigna_puntero</A></B>(const char* cad)
+<DD><I>Asigna un puntero de la longitud de la cadena y que contiene una copia de la cadena CAD</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>char* <B><A HREF="#DOC.5.9">Asigna_puntero</A></B>(const unsigned int lg)
+<DD><I>Asigna un puntero de longitud LG</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>char* <B><A HREF="#DOC.5.10">Asigna_puntero_sin_copiar</A></B>(const char* cad)
+<DD><I>Asigna un puntero de la longitud de la cadena CAD</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.11">Elimina_espacios_inicesarios</A></B>(const char* cad1, char* cad2)
+<DD><I>Elimina espacios inecesario de la cadena CAD1 dejando el resultado en la cadena CAD2</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.12">Elimina_espacios_inicesarios</A></B>(char* cad)
+<DD><I>Elimina espacios inecesario de la cadena CAD</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.13">Borra_cadena</A></B>(char* cad)
+<DD><I>Borra el contenido de la cadena, respetando la longitud de esta</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.14">Borra_caracter</A></B>(char* cad, const unsigned int pos)
+<DD><I>Borra de la cadena CAD el caracter especificado por la posici¢n POS, recorriendo el texto subsiguiente sin alterar su longitud</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.15">Borra_caracter</A></B>(const char* cad, const unsigned int pos, char* cadobj)
+<DD><I>Borra de la cadena CAD el caracter especificado por la posici¢n POS, recorriendo el texto subsiguiente sin alterar su longitud, retornando esta en CADOBJ</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.16">Borra_cadena_ini_pos</A></B>(char* cad, const unsigned int pos)
+<DD><I>Borra desde el inicio hasta la  posici¢n POS de la cadena, respetando la longitud de esta</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.17">Borra_cadena_pos_fin</A></B>(char* cad, const unsigned int pos)
+<DD><I>Borra desde la posici¢n POS hasta el final de la cadena, respetando la longitud de esta</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.18">Busca_caracter</A></B>(const char* cad, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, unsigned int &amp;pos)
+<DD><I>Indica la posici&oacute;n POS en que fuen encontrado el caracter CAR en la cadena CAD, retorna 0 si no lo encuentra y 1 si lo encuentra</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.19">Busca_caracteres</A></B>(const char* cad, const char* cars, unsigned int &amp;pos)
+<DD><I>Indica la posici&oacute;n en que fue encontrado cualquier caracter de la cadena CARS en la cadena CAD e indicando su posicion en la variable POS, si no fue encontrado, retorna 0, si fue encontrado retorna 1 </I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.20">Busca_cadena</A></B>(const char* cad, const char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>, unsigned int &amp;pos)
+<DD><I>Busca en la cadena CAD los caracteres de la cadena XCAD, indicando la posici&oacute;n donde inicia esta POS, retornando 0 si no la encuentra, y 1 si la encuentra</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.21">Busca_cadena</A></B>(const char* cad, const char* cbus, const unsigned int pos_ini, unsigned int &amp;pos)
+<DD><I>Busca en la cadena CAD los caracteres de la cadena XCAD iniciando en la posicion POS_INI, indicando la posici¢n donde inicia esta POS, retornando 0 si no la encuentra, y 1 si la encuentra</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.22">Busca_cadena_inicio</A></B>(const char* cad, const char* cbus, const unsigned int tp)
+<DD><I>Busca si la cadena CBUS esta al inicio de la cadena CAD, retorna 1 si esta y 0 en caso contrario</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.23">Busca_cadena_final</A></B>(const char* cad, const char* cbus, const unsigned int tp)
+<DD><I>Busca si la cadena CBUS esta al final de la cadena CAD, retorna 1 si esta y 0 en caso contrario</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.24">Busca_cadena_metacaracteres</A></B>(const char* cad, const char* cbus, const unsigned int pos_ini, unsigned int &amp;pos)
+<DD><I>Busca si la cadena CBUS esta en la cadena CAD (soporta el metacaracter ?), retorna 1 si esta y 0 en caso contrario</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.25">Busca_patron</A></B>(const char* cad, const char* patron)
+<DD><I>Busca en una cadena un patron, retornando 1 si lo encontra y 0 en caso contrario</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.26">Busca_remplaza_cadenas</A></B>(char* cad, const char* bus, const char* rem)
+<DD><I>Remplaza de la cadena CAD la cedena buscada BUS por la cedena REM (todas las ocurrencias), retornando el numero de remplazos</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.27">Busca_expresion</A></B>(const char* cad, const char* exp, unsigned int &amp;pos)
+<DD><I>Busca una expresion EXP, dentro de la cadena CAD (expresion es una variable o funcion), la expresion buscada estara delimitada por</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.28">Busca_remplaza_expresion</A></B>(char* exp, const char* bus, const char* rem)
+<DD><I>Remplaza de la cadena CAD la cedena buscada BUS por la cedena REM (todas las ocurrencias), retornando el numero de remplazos      </I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.29">Posicion_palabra_anterior</A></B>(const char* cad, const unsigned int pos, const unsigned int t_p)
+<DD><I>Retorna la posicion donde inicia la palabra anterior en la cadena CAD a partir de la posicion POS hasta el inicio de la cadena, retornando -1 si no se encuentra</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.30">Posicion_palabra_siguiente</A></B>(const char* cad, const unsigned int pos, const unsigned int t_p)
+<DD><I>Retorna la posicion donde inicia la palabra siguiente en la cadena CAD a partir de la posicion POS, retornando -1 si esta al final de la cadena</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.31">Compara_ignorando_minusculas</A></B>(const char* cad1, const char* cad2)
+<DD><I>Compara la cadena CAD1 con la cadena CAD2 ignorando minusculas y regresando verdadero si son iguales </I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.32">Numero_veces_cadena</A></B>(const char* cadena, const char* cbus)
+<DD><I>Cuenta el numero de veces que una cadena CBUS aparece en la cadena CADENA, si no lo encuentra retorna 0</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.33">Numero_veces_caracter</A></B>(const char* cadena, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Cuenta el numero de veces que un caracter CAR aparece en una cadena CEDENA, si no lo encuentra retorna 0</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.34">Es_caracter_digito</A></B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Retorna (1) si el carcter es digito, en caso contrario retorna (0), acepta loa siguientes caracteres como digitos [0123456789]</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.35">Es_caracter_numerico</A></B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Retorna (1) si el carcter es numerico, en caso contrario retorna (0), acepta loa siguientes caracteres como numericos [0123456789+-]</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.36">Es_caracter_alfabetico</A></B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Retorna (1) si el carcter es alfabetico, en caso contrario retorna (0), acepta loa siguientes caracteres como alfabeticos [ABCDEFGHIJKLMNOPQRSTUVWXYZZabcdefghijklmnopqrstuvwxyz]</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.37">Es_caracter_alfnumerico</A></B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Retorna (1) si el carcter es alfanumerico, en caso contrario retorna (0), acepta loa siguientes caracteres como alfanumerico [ABCDEFGHIJKLMNOPQRSTUVWXYZZabcdefghijklmnopqrstuvwxyz†ÖÇä&iexcl;ç¢¢£óÅ§• -_0123456789+]</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.38">Es_caracter_espaciado</A></B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Retorna (1) si el caracter es espacio o tabulador, en caso contrario retorna (0)</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.39">Es_cadena_numero</A></B>(const char* cad)
+<DD><I>Retorna verdadero si la cadena s¢lo contiene una expresion numerica valida (ya sea en formato exponencial o numerico ordinario) en caso contrario retorna (0)</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.40">Es_cadena_alfabetica</A></B>(const char* cad)
+<DD><I>Retorna verdadero si la cadena solo contiene caracteres alfabeticos, espacios, guion o subrrayado, en caso contrario retorna (0).</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.41">Es_cadena_vacia</A></B>(const char* cad)
+<DD><I>Retorna un 0 si la cadena CAD es vacia y 1 en caso contrario</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>char <B><A HREF="#DOC.5.42">Convierte_may_min</A></B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, const unsigned int t_p)
+<DD><I>Convierte el caracter CAR segun la siguiente convicci&oacute;n</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.43">Convierte_mayusculas</A></B>(char* cad)
+<DD><I>Convierte a mayuscula los caracteres de la cadena CAD </I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.44">Convierte_minusculas</A></B>(char* cad)
+<DD><I>Convierte a minusculas los caracteres de la cadena CAD </I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.45">Convierte_ucfirst</A></B>(char* cad)
+<DD><I>Combierte el primer caracter de la palabra en mayuscula</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.46">Convierte_ucwords</A></B>(char* cad)
+<DD><I>Combierte el primer caracter de cada palabra en mayuscula</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.47">Substr</A></B>(const char* cad, const unsigned int p_i, const unsigned int n_c, char* cadobj)
+<DD><I>Extrae de la cadena CAD el numero de caracteres indicados en N_C a partir de la posicion P_I partiendo de cero, retornando un puntero a ella</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.48">Lg_cadena_sin_espacios_final</A></B>(const char* cad)
+<DD><I>Retorna la longitud de la cadena sin los espacios al final de esta</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.49">Lg_cadena_sin_espacios</A></B>(const char* cad)
+<DD><I>Retorna la longitud de la cadena sin espacios</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.50">Trim</A></B>(char* cad)
+<DD><I>Quita los espacios que existan al inicio y al final de la cadena retornando la longitud de la cadena</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>unsigned int <B><A HREF="#DOC.5.51">Trim</A></B>(const char* cad, char* cadobj)
+<DD><I>Quita los espacios que existan al inicio y al fin de la cadena CAD dejandola en la cadena CADOBJ, retornando la longitud de la cadena</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.52">Inserta_caracter</A></B>(char* cad, const unsigned int pos, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DD><I>Inserta el caracter CAR en la posicion POS recorriendo todos los caracteres siguientes</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.53">Alinea_cadena</A></B>(const char* cad, const unsigned int lg, const int tp, char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>)
+<DD><I>Alinea el contenido de la cadena CAD a la longitud LG y retorna esta en la cadena XCAD</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.54">Quitar_caracter</A></B>(char* cad, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, const unsigned int t_p = 1)
+<DD><I>Quita de la cadena CAD, la(s) ocurrencia(s) del caracter CAR</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.55">Expander_Cadena_numerica_entera</A></B>(const char* cad, char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>)
+<DD><I>Expande una cadena del tipo (1,2,4-7,9) dejandola como (1,2,4,5,6,7,9)</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.56">Arreglo_libera</A></B>(void)
+<DD><I>Libera la memoria ocupada por el arreglo</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.5.57">Arreglo_inicializa</A></B>(const int num_col_max, const int tam)
+<DD><I>Inicializa el arreglo de trabajo</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.58">Arreglo_Separa_elementos</A></B>(const char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>, const char sep)
+<DD><I>Separar una cadena en sus componentes indicados por un separador dado retornado el numero de elementos encontrado</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>char* <B><A HREF="#DOC.5.59">Arreglo_retorna_elemento</A></B>(const int in)
+<DD><I>Retorna los componentes de una cadena indicados por un separador dado </I>
+</DL></P>
+
+<P><DL>
+<DT><H3>Private Fields</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>bool <B><A HREF="#DOC.5.1">Arreglo_inicializado</A></B>
+<DD><I>Varables usadas para separar una cadena en sus componentes indicados por un separador dado </I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>char** <B><A HREF="#DOC.5.2">Arreglo</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.3">Arreglo_num_columnas_maximas</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.4">Arreglo_num_columnas_encontradas</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>int <B><A HREF="#DOC.5.5">Arreglo_tamano_columna</A></B>
+</DL></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Clase para manipulaci&oacute;n de cadenas</BLOCKQUOTE>
+<DL>
+
+<A NAME="Arreglo_inicializado"></A>
+<A NAME="DOC.5.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>bool Arreglo_inicializado</B></TT>
+<DD>Varables usadas para separar una cadena en sus componentes indicados por un separador dado 
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo"></A>
+<A NAME="DOC.5.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>char** Arreglo</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_num_columnas_maximas"></A>
+<A NAME="DOC.5.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Arreglo_num_columnas_maximas</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_num_columnas_encontradas"></A>
+<A NAME="DOC.5.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Arreglo_num_columnas_encontradas</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_tamano_columna"></A>
+<A NAME="DOC.5.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Arreglo_tamano_columna</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="Cadenas"></A>
+<A NAME="DOC.5.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> Cadenas(void)</B></TT>
+<DD>Constructor de la clase
+<DL><DT><DD></DL><P>
+<A NAME="~Cadenas"></A>
+<A NAME="DOC.5.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B> ~Cadenas()</B></TT>
+<DD>Destructor de la clase
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_puntero"></A>
+<A NAME="DOC.5.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>char* Asigna_puntero(const char* cad)</B></TT>
+<DD>Asigna un puntero de la longitud de la cadena y que contiene una copia de la cadena CAD
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_puntero"></A>
+<A NAME="DOC.5.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>char* Asigna_puntero(const unsigned int lg)</B></TT>
+<DD>Asigna un puntero de longitud LG
+<DL><DT><DD></DL><P>
+<A NAME="Asigna_puntero_sin_copiar"></A>
+<A NAME="DOC.5.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>char* Asigna_puntero_sin_copiar(const char* cad)</B></TT>
+<DD>Asigna un puntero de la longitud de la cadena CAD
+<DL><DT><DD></DL><P>
+<A NAME="Elimina_espacios_inicesarios"></A>
+<A NAME="DOC.5.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Elimina_espacios_inicesarios(const char* cad1, char* cad2)</B></TT>
+<DD>Elimina espacios inecesario de la cadena CAD1 dejando el resultado en la cadena CAD2
+<DL><DT><DD></DL><P>
+<A NAME="Elimina_espacios_inicesarios"></A>
+<A NAME="DOC.5.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Elimina_espacios_inicesarios(char* cad)</B></TT>
+<DD>Elimina espacios inecesario de la cadena CAD
+<DL><DT><DD></DL><P>
+<A NAME="Borra_cadena"></A>
+<A NAME="DOC.5.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Borra_cadena(char* cad)</B></TT>
+<DD>Borra el contenido de la cadena, respetando la longitud de esta
+<DL><DT><DD></DL><P>
+<A NAME="Borra_caracter"></A>
+<A NAME="DOC.5.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Borra_caracter(char* cad, const unsigned int pos)</B></TT>
+<DD>Borra de la cadena CAD el caracter especificado por la posici¢n POS, recorriendo el texto subsiguiente sin alterar su longitud
+<DL><DT><DD></DL><P>
+<A NAME="Borra_caracter"></A>
+<A NAME="DOC.5.15"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Borra_caracter(const char* cad, const unsigned int pos, char* cadobj)</B></TT>
+<DD>Borra de la cadena CAD el caracter especificado por la posici¢n POS, recorriendo el texto subsiguiente sin alterar su longitud, retornando esta en CADOBJ
+<DL><DT><DD></DL><P>
+<A NAME="Borra_cadena_ini_pos"></A>
+<A NAME="DOC.5.16"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Borra_cadena_ini_pos(char* cad, const unsigned int pos)</B></TT>
+<DD>Borra desde el inicio hasta la  posici¢n POS de la cadena, respetando la longitud de esta
+<DL><DT><DD></DL><P>
+<A NAME="Borra_cadena_pos_fin"></A>
+<A NAME="DOC.5.17"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Borra_cadena_pos_fin(char* cad, const unsigned int pos)</B></TT>
+<DD>Borra desde la posici¢n POS hasta el final de la cadena, respetando la longitud de esta
+<DL><DT><DD></DL><P>
+<A NAME="Busca_caracter"></A>
+<A NAME="DOC.5.18"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_caracter(const char* cad, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, unsigned int &amp;pos)</B></TT>
+<DD>Indica la posici&oacute;n POS en que fuen encontrado el caracter CAR en la cadena CAD, retorna 0 si no lo encuentra y 1 si lo encuentra
+<DL><DT><DD></DL><P>
+<A NAME="Busca_caracteres"></A>
+<A NAME="DOC.5.19"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_caracteres(const char* cad, const char* cars, unsigned int &amp;pos)</B></TT>
+<DD>Indica la posici&oacute;n en que fue encontrado cualquier caracter de la cadena CARS en la cadena CAD e indicando su posicion en la variable POS, si no fue encontrado, retorna 0, si fue encontrado retorna 1 
+<DL><DT><DD></DL><P>
+<A NAME="Busca_cadena"></A>
+<A NAME="DOC.5.20"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_cadena(const char* cad, const char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>, unsigned int &amp;pos)</B></TT>
+<DD>Busca en la cadena CAD los caracteres de la cadena XCAD, indicando la posici&oacute;n donde inicia esta POS, retornando 0 si no la encuentra, y 1 si la encuentra
+<DL><DT><DD></DL><P>
+<A NAME="Busca_cadena"></A>
+<A NAME="DOC.5.21"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_cadena(const char* cad, const char* cbus, const unsigned int pos_ini, unsigned int &amp;pos)</B></TT>
+<DD>Busca en la cadena CAD los caracteres de la cadena XCAD iniciando en la posicion POS_INI, indicando la posici¢n donde inicia esta POS, retornando 0 si no la encuentra, y 1 si la encuentra
+<DL><DT><DD></DL><P>
+<A NAME="Busca_cadena_inicio"></A>
+<A NAME="DOC.5.22"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_cadena_inicio(const char* cad, const char* cbus, const unsigned int tp)</B></TT>
+<DD>Busca si la cadena CBUS esta al inicio de la cadena CAD, retorna 1 si esta y 0 en caso contrario
+<DL><DT><DD></DL><P>
+<A NAME="Busca_cadena_final"></A>
+<A NAME="DOC.5.23"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_cadena_final(const char* cad, const char* cbus, const unsigned int tp)</B></TT>
+<DD>Busca si la cadena CBUS esta al final de la cadena CAD, retorna 1 si esta y 0 en caso contrario
+<DL><DT><DD></DL><P>
+<A NAME="Busca_cadena_metacaracteres"></A>
+<A NAME="DOC.5.24"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_cadena_metacaracteres(const char* cad, const char* cbus, const unsigned int pos_ini, unsigned int &amp;pos)</B></TT>
+<DD>Busca si la cadena CBUS esta en la cadena CAD (soporta el metacaracter ?), retorna 1 si esta y 0 en caso contrario
+<DL><DT><DD></DL><P>
+<A NAME="Busca_patron"></A>
+<A NAME="DOC.5.25"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_patron(const char* cad, const char* patron)</B></TT>
+<DD>Busca en una cadena un patron, retornando 1 si lo encontra y 0 en caso contrario
+<DL><DT><DD></DL><P>
+<A NAME="Busca_remplaza_cadenas"></A>
+<A NAME="DOC.5.26"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Busca_remplaza_cadenas(char* cad, const char* bus, const char* rem)</B></TT>
+<DD>Remplaza de la cadena CAD la cedena buscada BUS por la cedena REM (todas las ocurrencias), retornando el numero de remplazos
+<DL><DT><DD></DL><P>
+<A NAME="Busca_expresion"></A>
+<A NAME="DOC.5.27"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Busca_expresion(const char* cad, const char* exp, unsigned int &amp;pos)</B></TT>
+<DD>Busca una expresion EXP, dentro de la cadena CAD (expresion es una variable o funcion), la expresion buscada estara delimitada por
+<DL><DT><DD></DL><P>
+<A NAME="Busca_remplaza_expresion"></A>
+<A NAME="DOC.5.28"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Busca_remplaza_expresion(char* exp, const char* bus, const char* rem)</B></TT>
+<DD>Remplaza de la cadena CAD la cedena buscada BUS por la cedena REM (todas las ocurrencias), retornando el numero de remplazos      
+<DL><DT><DD></DL><P>
+<A NAME="Posicion_palabra_anterior"></A>
+<A NAME="DOC.5.29"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Posicion_palabra_anterior(const char* cad, const unsigned int pos, const unsigned int t_p)</B></TT>
+<DD>Retorna la posicion donde inicia la palabra anterior en la cadena CAD a partir de la posicion POS hasta el inicio de la cadena, retornando -1 si no se encuentra
+<DL><DT><DD></DL><P>
+<A NAME="Posicion_palabra_siguiente"></A>
+<A NAME="DOC.5.30"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Posicion_palabra_siguiente(const char* cad, const unsigned int pos, const unsigned int t_p)</B></TT>
+<DD>Retorna la posicion donde inicia la palabra siguiente en la cadena CAD a partir de la posicion POS, retornando -1 si esta al final de la cadena
+<DL><DT><DD></DL><P>
+<A NAME="Compara_ignorando_minusculas"></A>
+<A NAME="DOC.5.31"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Compara_ignorando_minusculas(const char* cad1, const char* cad2)</B></TT>
+<DD>Compara la cadena CAD1 con la cadena CAD2 ignorando minusculas y regresando verdadero si son iguales 
+<DL><DT><DD></DL><P>
+<A NAME="Numero_veces_cadena"></A>
+<A NAME="DOC.5.32"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Numero_veces_cadena(const char* cadena, const char* cbus)</B></TT>
+<DD>Cuenta el numero de veces que una cadena CBUS aparece en la cadena CADENA, si no lo encuentra retorna 0
+<DL><DT><DD></DL><P>
+<A NAME="Numero_veces_caracter"></A>
+<A NAME="DOC.5.33"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Numero_veces_caracter(const char* cadena, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Cuenta el numero de veces que un caracter CAR aparece en una cadena CEDENA, si no lo encuentra retorna 0
+<DL><DT><DD></DL><P>
+<A NAME="Es_caracter_digito"></A>
+<A NAME="DOC.5.34"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_caracter_digito(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Retorna (1) si el carcter es digito, en caso contrario retorna (0), acepta loa siguientes caracteres como digitos [0123456789]
+<DL><DT><DD></DL><P>
+<A NAME="Es_caracter_numerico"></A>
+<A NAME="DOC.5.35"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_caracter_numerico(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Retorna (1) si el carcter es numerico, en caso contrario retorna (0), acepta loa siguientes caracteres como numericos [0123456789+-]
+<DL><DT><DD></DL><P>
+<A NAME="Es_caracter_alfabetico"></A>
+<A NAME="DOC.5.36"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_caracter_alfabetico(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Retorna (1) si el carcter es alfabetico, en caso contrario retorna (0), acepta loa siguientes caracteres como alfabeticos [ABCDEFGHIJKLMNOPQRSTUVWXYZZabcdefghijklmnopqrstuvwxyz]
+<DL><DT><DD></DL><P>
+<A NAME="Es_caracter_alfnumerico"></A>
+<A NAME="DOC.5.37"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_caracter_alfnumerico(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Retorna (1) si el carcter es alfanumerico, en caso contrario retorna (0), acepta loa siguientes caracteres como alfanumerico [ABCDEFGHIJKLMNOPQRSTUVWXYZZabcdefghijklmnopqrstuvwxyz†ÖÇä&iexcl;ç¢¢£óÅ§• -_0123456789+]
+<DL><DT><DD></DL><P>
+<A NAME="Es_caracter_espaciado"></A>
+<A NAME="DOC.5.38"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_caracter_espaciado(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Retorna (1) si el caracter es espacio o tabulador, en caso contrario retorna (0)
+<DL><DT><DD></DL><P>
+<A NAME="Es_cadena_numero"></A>
+<A NAME="DOC.5.39"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_cadena_numero(const char* cad)</B></TT>
+<DD>Retorna verdadero si la cadena s¢lo contiene una expresion numerica valida (ya sea en formato exponencial o numerico ordinario) en caso contrario retorna (0)
+<DL><DT><DD></DL><P>
+<A NAME="Es_cadena_alfabetica"></A>
+<A NAME="DOC.5.40"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_cadena_alfabetica(const char* cad)</B></TT>
+<DD>Retorna verdadero si la cadena solo contiene caracteres alfabeticos, espacios, guion o subrrayado, en caso contrario retorna (0). Soporta caracteres como †ÖÇä&iexcl;ç¢ï£óÅ§•
+<DL><DT><DD></DL><P>
+<A NAME="Es_cadena_vacia"></A>
+<A NAME="DOC.5.41"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Es_cadena_vacia(const char* cad)</B></TT>
+<DD>Retorna un 0 si la cadena CAD es vacia y 1 en caso contrario
+<DL><DT><DD></DL><P>
+<A NAME="Convierte_may_min"></A>
+<A NAME="DOC.5.42"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>char Convierte_may_min(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, const unsigned int t_p)</B></TT>
+<DD>Convierte el caracter CAR segun la siguiente convicci&oacute;n
+<DL><DT><DD></DL><P>
+<A NAME="Convierte_mayusculas"></A>
+<A NAME="DOC.5.43"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Convierte_mayusculas(char* cad)</B></TT>
+<DD>Convierte a mayuscula los caracteres de la cadena CAD 
+<DL><DT><DD></DL><P>
+<A NAME="Convierte_minusculas"></A>
+<A NAME="DOC.5.44"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Convierte_minusculas(char* cad)</B></TT>
+<DD>Convierte a minusculas los caracteres de la cadena CAD 
+<DL><DT><DD></DL><P>
+<A NAME="Convierte_ucfirst"></A>
+<A NAME="DOC.5.45"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Convierte_ucfirst(char* cad)</B></TT>
+<DD>Combierte el primer caracter de la palabra en mayuscula
+<DL><DT><DD></DL><P>
+<A NAME="Convierte_ucwords"></A>
+<A NAME="DOC.5.46"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Convierte_ucwords(char* cad)</B></TT>
+<DD>Combierte el primer caracter de cada palabra en mayuscula
+<DL><DT><DD></DL><P>
+<A NAME="Substr"></A>
+<A NAME="DOC.5.47"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Substr(const char* cad, const unsigned int p_i, const unsigned int n_c, char* cadobj)</B></TT>
+<DD>Extrae de la cadena CAD el numero de caracteres indicados en N_C a partir de la posicion P_I partiendo de cero, retornando un puntero a ella
+<DL><DT><DD></DL><P>
+<A NAME="Lg_cadena_sin_espacios_final"></A>
+<A NAME="DOC.5.48"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Lg_cadena_sin_espacios_final(const char* cad)</B></TT>
+<DD>Retorna la longitud de la cadena sin los espacios al final de esta
+<DL><DT><DD></DL><P>
+<A NAME="Lg_cadena_sin_espacios"></A>
+<A NAME="DOC.5.49"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Lg_cadena_sin_espacios(const char* cad)</B></TT>
+<DD>Retorna la longitud de la cadena sin espacios
+<DL><DT><DD></DL><P>
+<A NAME="Trim"></A>
+<A NAME="DOC.5.50"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Trim(char* cad)</B></TT>
+<DD>Quita los espacios que existan al inicio y al final de la cadena retornando la longitud de la cadena
+<DL><DT><DD></DL><P>
+<A NAME="Trim"></A>
+<A NAME="DOC.5.51"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>unsigned int Trim(const char* cad, char* cadobj)</B></TT>
+<DD>Quita los espacios que existan al inicio y al fin de la cadena CAD dejandola en la cadena CADOBJ, retornando la longitud de la cadena
+<DL><DT><DD></DL><P>
+<A NAME="Inserta_caracter"></A>
+<A NAME="DOC.5.52"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Inserta_caracter(char* cad, const unsigned int pos, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)</B></TT>
+<DD>Inserta el caracter CAR en la posicion POS recorriendo todos los caracteres siguientes
+<DL><DT><DD></DL><P>
+<A NAME="Alinea_cadena"></A>
+<A NAME="DOC.5.53"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Alinea_cadena(const char* cad, const unsigned int lg, const int tp, char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>)</B></TT>
+<DD>Alinea el contenido de la cadena CAD a la longitud LG y retorna esta en la cadena XCAD
+<DL><DT><DD></DL><P>
+<A NAME="Quitar_caracter"></A>
+<A NAME="DOC.5.54"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Quitar_caracter(char* cad, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, const unsigned int t_p = 1)</B></TT>
+<DD>Quita de la cadena CAD, la(s) ocurrencia(s) del caracter CAR
+<DL><DT><DD></DL><P>
+<A NAME="Expander_Cadena_numerica_entera"></A>
+<A NAME="DOC.5.55"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Expander_Cadena_numerica_entera(const char* cad, char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>)</B></TT>
+<DD>Expande una cadena del tipo (1,2,4-7,9) dejandola como (1,2,4,5,6,7,9)
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_libera"></A>
+<A NAME="DOC.5.56"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Arreglo_libera(void)</B></TT>
+<DD>Libera la memoria ocupada por el arreglo
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_inicializa"></A>
+<A NAME="DOC.5.57"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Arreglo_inicializa(const int num_col_max, const int tam)</B></TT>
+<DD>Inicializa el arreglo de trabajo
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_Separa_elementos"></A>
+<A NAME="DOC.5.58"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>int Arreglo_Separa_elementos(const char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>, const char sep)</B></TT>
+<DD>Separar una cadena en sus componentes indicados por un separador dado retornado el numero de elementos encontrado
+<DL><DT><DD></DL><P>
+<A NAME="Arreglo_retorna_elemento"></A>
+<A NAME="DOC.5.59"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>char* Arreglo_retorna_elemento(const int in)</B></TT>
+<DD>Retorna los componentes de una cadena indicados por un separador dado 
+<DL><DT><DD></DL><P></DL>
+<HR>
+<DL><DT><B>Direct child classes:
+</B><DD><A HREF="Manipulador_archivos.html">Manipulador_archivos</A><BR>
+<A HREF="Base_Ventana_Graficacion.html">Base_Ventana_Graficacion</A><BR>
+</DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>

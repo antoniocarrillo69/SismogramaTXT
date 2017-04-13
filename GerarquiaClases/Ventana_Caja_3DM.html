@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+   <TITLE>class  Ventana_Caja_3DM</TITLE>
+   <META NAME="GENERATOR" CONTENT="DOC++ 3.4.10">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<H2>class  <A HREF="#DOC.DOCU">Ventana_Caja_3DM</A></H2></H2><BLOCKQUOTE>Ventana de caja odificada en 3D </BLOCKQUOTE>
+<HR>
+
+<H2>Inheritance:</H2>
+<APPLET CODE="ClassGraph.class" WIDTH=600 HEIGHT=125>
+<param name=classes value="CCadenas,MCadenas.html,CBase_Ventana_Graficacion,MBase_Ventana_Graficacion.html,CVentana_Caja_3DM,MVentana_Caja_3DM.html,CControl_Visualizacion,MControl_Visualizacion.html">
+<param name=before value="M,M,M,M^_">
+<param name=after value="Md_SP,Md_,M,M">
+<param name=indent value="0,1,2,2">
+<param name=arrowdir value="down">
+</APPLET>
+<HR>
+
+<DL>
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>virtual   void <B><A HREF="#DOC.74.10">Inicializa</A></B>(void)
+<DD><I>Inicializa la clase</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>virtual   void <B><A HREF="#DOC.74.11">Dibuja</A></B>(void)
+<DD><I>Dibuja al ventana</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>virtual   void <B><A HREF="#DOC.74.12">Rotar_ejes_caja</A></B>(const <!1><A HREF="ldouble.html">ldouble</A> fi, const <!1><A HREF="ldouble.html">ldouble</A> te)
+<DD><I>Rota los ejes coordenados</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>virtual   void <B><A HREF="#DOC.74.13">Acercar_alejar_ejes</A></B>(void)
+<DD><I>Acerca o aleja los ejes coordenados</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>virtual   void <B><A HREF="#DOC.74.14">Graduar_ejes</A></B>(void)
+<DD><I>Gradua los ejes coordenados</I>
+</DL></P>
+
+<P><DL>
+<DT><H3>Protected Fields</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A> <B><A HREF="#DOC.74.1">Factor</A></B>
+<DD><I>Factor de acercaminento dentro de la ventana</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A> <B><A HREF="#DOC.74.2">TETA</A></B>
+<DD><I>Valores usados para la proyecci&oacute;n</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A>  <B><A HREF="#DOC.74.3">FI</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A> <B><A HREF="#DOC.74.4">ST</A></B>
+<DD><I>Valores usados para la proyecci&oacute;n</I>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A>  <B><A HREF="#DOC.74.5">SF</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A>   <B><A HREF="#DOC.74.6">CT</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="ldouble.html">ldouble</A>    <B><A HREF="#DOC.74.7">CF</A></B>
+<DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif><!1><A HREF="C_2I.html">C_2I</A> <B><A HREF="#DOC.74.8">Centro</A></B>
+<DD><I>Centro de la pantalla</I>
+</DL></P>
+
+<P><DL>
+<DT><H3>Protected Methods</H3><DD><DT>
+<IMG ALT="[more]" BORDER=0 SRC=icon1.gif>void <B><A HREF="#DOC.74.9">Calcula_valores</A></B>(void)
+<DD><I>Calcula los valores necesarios </I>
+</DL></P>
+
+</DL>
+<HR><H3>Inherited from <A HREF="Base_Ventana_Graficacion.html">Base_Ventana_Graficacion</A>:</H3>
+<DL>
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>virtual   void <B>Destruye</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Retorna_Dimensiones</B>(<!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> &amp;dim_v)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Establece_Dimensiones</B>(const <!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> dim_v)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Establece_coordenadas</B>(const <!1><A HREF="C_3D.html">C_3D</A> n_cda)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Retorna_visualiza_nombre_eje</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Establece_Visualiza_nombre_eje</B>(const int tp)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Establece_nombre_ejes</B>(const char* eje_x, const char* eje_y, const char* eje_z)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Limpia_todos_arreglos</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Muestra_texto_ventana</B>(const int <!1><A HREF="Ventana_256.html#DOC.49.18">x</A>, const int <!1><A HREF="Ventana_256.html#DOC.49.19">y</A>, const char* txt1, const char* txt2)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Limpiar</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Limpiar_fondo</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Grafica_ventana</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Grafica_region_ventana</B>(const int xx, const int xy, const int tam)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Quitar_cursor_ventana</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Establecer_visualizar_cursor</B>(const bool <!1><A HREF="Ventana_256.html#DOC.49.21">st</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Asigna_puntero_ventana_Visualizacion</B>(TPaintBox* ptr)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Retorna_colores_ejes</B>(<!1><A HREF="TColor.html">TColor</A> &amp;c1, <!1><A HREF="TColor.html">TColor</A> &amp;c2, <!1><A HREF="TColor.html">TColor</A> &amp;c3)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Fija_colores_ejes</B>(const <!1><A HREF="TColor.html">TColor</A> c1, const <!1><A HREF="TColor.html">TColor</A> c2, const <!1><A HREF="TColor.html">TColor</A> c3)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Dibuja_punto_ventana_2D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux, const <!1><A HREF="TColor.html">TColor</A> color)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Dibuja_linea_ventana_2D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux1, const <!1><A HREF="C_3D.html">C_3D</A> aux2, const <!1><A HREF="TColor.html">TColor</A> color)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Posicion_ventana_2D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.18">x</A>, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.19">y</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>virtual   void <B>Posicion_3D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.18">x</A>, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.19">y</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Dibuja_punto_ventana_3D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux, const <!1><A HREF="TColor.html">TColor</A> color)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Dibuja_linea_ventana_3D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux1, const <!1><A HREF="C_3D.html">C_3D</A> aux2, const <!1><A HREF="TColor.html">TColor</A> color)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Posicion_ventana_3D</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.18">x</A>, int &amp;<!1><A HREF="Ventana_256.html#DOC.49.19">y</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Graba_datos</B>(const char* arc)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Cierra_archivo_datos</B>(void)
+</DL></P>
+
+<P><DL>
+<DT><H3>Protected Fields</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="TColor.html">TColor</A> <B>Color_fondo</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="TColor.html">TColor</A> <B>Color_cursor</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="TColor.html">TColor</A> <B>Color_Eje_X</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="TColor.html">TColor</A> <B>Color_Eje_Y</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="TColor.html">TColor</A> <B>Color_Eje_Z</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Numero_pixeles_ventana</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>TPaintBox* <B>PtrVent</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="Ventana_256.html">Ventana_256</A>* <B>Pix</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="Dimension_Ventana.html">Dimension_Ventana</A> <B>Dim_vtn</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="C_3D.html">C_3D</A> <B>Coordenadas_reales</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="C_2D.html">C_2D</A> <B>Escala</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="C_3D.html">C_3D</A> <B>EscalaReal</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="C_2I.html">C_2I</A> <B>Pos_cursor</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>Visualiza_cursor</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Nombre_eje_X</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Nombre_eje_Y</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Nombre_eje_Z</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>Visualiza_nombre_eje</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Tipo_ventana</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>px</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int  <B>py</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int   <B>px1</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int    <B>py1</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif><!1><A HREF="Manipulador_archivos.html">Manipulador_archivos</A>* <B>MD</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char <B>xcad</B>[200]
+</DL></P>
+
+<P><DL>
+<DT><H3>Protected Methods</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Dentro_ventana</B>(const <!1><A HREF="C_3D.html">C_3D</A> aux)
+</DL></P>
+
+</DL>
+<HR><H3>Inherited from <A HREF="Cadenas.html">Cadenas</A>:</H3>
+<DL>
+<P><DL>
+<DT><H3>Public Methods</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Asigna_puntero</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Asigna_puntero</B>(const unsigned int lg)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Asigna_puntero_sin_copiar</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Elimina_espacios_inicesarios</B>(const char* cad1, char* cad2)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Elimina_espacios_inicesarios</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Borra_cadena</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Borra_caracter</B>(char* cad, const unsigned int pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Borra_caracter</B>(const char* cad, const unsigned int pos, char* cadobj)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Borra_cadena_ini_pos</B>(char* cad, const unsigned int pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Borra_cadena_pos_fin</B>(char* cad, const unsigned int pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_caracter</B>(const char* cad, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, unsigned int &amp;pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_caracteres</B>(const char* cad, const char* cars, unsigned int &amp;pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_cadena</B>(const char* cad, const char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>, unsigned int &amp;pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_cadena</B>(const char* cad, const char* cbus, const unsigned int pos_ini, unsigned int &amp;pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_cadena_inicio</B>(const char* cad, const char* cbus, const unsigned int tp)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_cadena_final</B>(const char* cad, const char* cbus, const unsigned int tp)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_cadena_metacaracteres</B>(const char* cad, const char* cbus, const unsigned int pos_ini, unsigned int &amp;pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_patron</B>(const char* cad, const char* patron)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Busca_remplaza_cadenas</B>(char* cad, const char* bus, const char* rem)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Busca_expresion</B>(const char* cad, const char* exp, unsigned int &amp;pos)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Busca_remplaza_expresion</B>(char* exp, const char* bus, const char* rem)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Posicion_palabra_anterior</B>(const char* cad, const unsigned int pos, const unsigned int t_p)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Posicion_palabra_siguiente</B>(const char* cad, const unsigned int pos, const unsigned int t_p)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Compara_ignorando_minusculas</B>(const char* cad1, const char* cad2)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Numero_veces_cadena</B>(const char* cadena, const char* cbus)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Numero_veces_caracter</B>(const char* cadena, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_caracter_digito</B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_caracter_numerico</B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_caracter_alfabetico</B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_caracter_alfnumerico</B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_caracter_espaciado</B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_cadena_numero</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_cadena_alfabetica</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Es_cadena_vacia</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char <B>Convierte_may_min</B>(const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, const unsigned int t_p)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Convierte_mayusculas</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Convierte_minusculas</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Convierte_ucfirst</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Convierte_ucwords</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Substr</B>(const char* cad, const unsigned int p_i, const unsigned int n_c, char* cadobj)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Lg_cadena_sin_espacios_final</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Lg_cadena_sin_espacios</B>(const char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Trim</B>(char* cad)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>unsigned int <B>Trim</B>(const char* cad, char* cadobj)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Inserta_caracter</B>(char* cad, const unsigned int pos, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Alinea_cadena</B>(const char* cad, const unsigned int lg, const int tp, char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Quitar_caracter</B>(char* cad, const char <!1><A HREF="Manipulador_archivos.html#DOC.27.3">car</A>, const unsigned int t_p = 1)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Expander_Cadena_numerica_entera</B>(const char* cad, char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Arreglo_libera</B>(void)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>void <B>Arreglo_inicializa</B>(const int num_col_max, const int tam)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Arreglo_Separa_elementos</B>(const char* <!1><A HREF="Manipulador_archivos.html#DOC.27.9">xcad</A>, const char sep)
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char* <B>Arreglo_retorna_elemento</B>(const int in)
+</DL></P>
+
+<P><DL>
+<DT><H3>Private Fields</H3><DD><DT>
+<IMG ALT="o" SRC=icon2.gif>bool <B>Arreglo_inicializado</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>char** <B>Arreglo</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Arreglo_num_columnas_maximas</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Arreglo_num_columnas_encontradas</B>
+<DT>
+<IMG ALT="o" SRC=icon2.gif>int <B>Arreglo_tamano_columna</B>
+</DL></P>
+
+</DL>
+
+<A NAME="DOC.DOCU"></A>
+<HR>
+<H2>Documentation</H2>
+<BLOCKQUOTE>Ventana de caja odificada en 3D </BLOCKQUOTE>
+<DL>
+
+<A NAME="Factor"></A>
+<A NAME="DOC.74.1"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A> Factor</B></TT>
+<DD>Factor de acercaminento dentro de la ventana
+<DL><DT><DD></DL><P>
+<A NAME="TETA"></A>
+<A NAME="DOC.74.2"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A> TETA</B></TT>
+<DD>Valores usados para la proyecci&oacute;n
+<DL><DT><DD></DL><P>
+<A NAME="FI"></A>
+<A NAME="DOC.74.3"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A>  FI</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="ST"></A>
+<A NAME="DOC.74.4"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A> ST</B></TT>
+<DD>Valores usados para la proyecci&oacute;n
+<DL><DT><DD></DL><P>
+<A NAME="SF"></A>
+<A NAME="DOC.74.5"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A>  SF</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="CT"></A>
+<A NAME="DOC.74.6"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A>   CT</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="CF"></A>
+<A NAME="DOC.74.7"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="ldouble.html">ldouble</A>    CF</B></TT>
+<DL><DT><DD></DL><P>
+<A NAME="Centro"></A>
+<A NAME="DOC.74.8"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B><!1><A HREF="C_2I.html">C_2I</A> Centro</B></TT>
+<DD>Centro de la pantalla
+<DL><DT><DD></DL><P>
+<A NAME="Calcula_valores"></A>
+<A NAME="DOC.74.9"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>void Calcula_valores(void)</B></TT>
+<DD>Calcula los valores necesarios 
+<DL><DT><DD></DL><P>
+<A NAME="Inicializa"></A>
+<A NAME="DOC.74.10"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>virtual   void Inicializa(void)</B></TT>
+<DD>Inicializa la clase
+<DL><DT><DD></DL><P>
+<A NAME="Dibuja"></A>
+<A NAME="DOC.74.11"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>virtual   void Dibuja(void)</B></TT>
+<DD>Dibuja al ventana
+<DL><DT><DD></DL><P>
+<A NAME="Rotar_ejes_caja"></A>
+<A NAME="DOC.74.12"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>virtual   void Rotar_ejes_caja(const <!1><A HREF="ldouble.html">ldouble</A> fi, const <!1><A HREF="ldouble.html">ldouble</A> te)</B></TT>
+<DD>Rota los ejes coordenados
+<DL><DT><DD></DL><P>
+<A NAME="Acercar_alejar_ejes"></A>
+<A NAME="DOC.74.13"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>virtual   void Acercar_alejar_ejes(void)</B></TT>
+<DD>Acerca o aleja los ejes coordenados
+<DL><DT><DD></DL><P>
+<A NAME="Graduar_ejes"></A>
+<A NAME="DOC.74.14"></A>
+<DT><IMG ALT="o" BORDER=0 SRC=icon2.gif><TT><B>virtual   void Graduar_ejes(void)</B></TT>
+<DD>Gradua los ejes coordenados
+<DL><DT><DD></DL><P></DL>
+<HR>
+<DL><DT><B>Direct child classes:
+</B><DD><A HREF="Control_Visualizacion.html">Control_Visualizacion</A><BR>
+</DL>
+
+<DL><DT><DD></DL><P><P><I><A HREF="index.html">Alphabetic index</A></I> <I><A HREF="HIER.html">HTML hierarchy of classes</A> or <A HREF="HIERjava.html">Java</A></I></P><HR>
+<BR>
+This page was generated with the help of <A HREF="http://docpp.sourceforge.net">DOC++</A>.
+</BODY>
+</HTML>
